@@ -53,20 +53,7 @@ class _MyAppState extends State<MyApp> {
           ],
         ),
         body: Center(
-          child: Stack(
-            children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/taeyang.png',
-                    width: 300,
-                    height: 300,
-                  ),
-                ],
-              ),
-          ]
-          ),
+          child: _screens[_selectedIndex],
         ),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.blue,
@@ -109,7 +96,11 @@ class Tab2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Tab 2 Screen"),
+      child: Text(
+        "tab2", style: TextStyle(
+        color: Colors.black
+      ),
+      ),
     );
   }
 }
@@ -118,7 +109,7 @@ class Tab3Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Tab 3 Screen"),
+      child: Text("tab3"),
     );
   }
 }
@@ -127,7 +118,7 @@ class Tab4Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Tab 4 Screen"),
+      child: Text("tab4"),
     );
   }
 }
@@ -136,7 +127,7 @@ class Tab5Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Tab 5 Screen"),
+      child: Text("tab5"),
     );
   }
 }
