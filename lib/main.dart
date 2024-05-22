@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -109,7 +107,10 @@ class Tab3Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("tab3"),
+      child: Text("tab3", style: TextStyle(
+          color: Colors.black
+      ),
+      ),
     );
   }
 }
@@ -118,7 +119,10 @@ class Tab4Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("tab4"),
+      child: Text("tab4", style: TextStyle(
+          color: Colors.black
+      ),
+      ),
     );
   }
 }
@@ -127,7 +131,9 @@ class Tab5Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("tab5"),
+      child: Text("tab5", style: TextStyle(
+          color: Colors.black
+      ),),
     );
   }
 }
